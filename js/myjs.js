@@ -58,14 +58,16 @@ $(document).ready(function(e) {
 $("#login").bind("pageinit",function(){
 	
 	$("#login-submit").bind("click",function(){
-		alert("submit !");
+		
 		var username = $("#login").find("#login-username").val();
 		var password = $("#login").find("#login-password").val();
 		
-		/*$.cookie('username', username);
-		$.cookie('password', password);
+		$.cookie('username', "Warut");
+		$.cookie('password', "Clay2899");
 		
-		alert("submit ! \n"+$.cookie('username')+" \n"+$.cookie('password'));*/
+		alert("Check cookies ! \n"+$.cookie('username')+" \n"+$.cookie('password'));
+		
+		
 		if(username=="leew" && password == "leew"){
 			
 			$.mobile.changePage($("#test"));
